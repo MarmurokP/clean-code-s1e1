@@ -30,10 +30,6 @@ input,button{
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.matrix { text-align: center;
-}
-}
 .tasks {
     display: block;
     width: 500px;
@@ -147,4 +143,12 @@ input,button{
 .tasks__edit-mode .tasks__edit-text {
     display:inline-block;
     width:224px;
+}
+
+@media (max-width:768px) {
+
+    .matrix {
+      text-align: center;
+    }
+
 }
