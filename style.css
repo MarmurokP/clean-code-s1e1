@@ -1,13 +1,13 @@
 /* Style reset */
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 li, h3 {
-    list-style:none;
+    list-style: none;
 }
 input,button{
-    outline:none;
+    outline: none;
 }
 
 /* Basic Style */
@@ -133,16 +133,16 @@ input,button{
 
 /* Edit Task */
 .tasks__list .tasks__edit-text {
-    display:none;
+    display: none;
 }
 
 .tasks__edit-mode .tasks__task {
-    display:none;
+    display: none;
 }
 
 .tasks__edit-mode .tasks__edit-text {
-    display:inline-block;
-    width:224px;
+    display: inline-block;
+    width: 224px;
 }
 
 @media (max-width:768px) {
