@@ -11,18 +11,19 @@ input,button{
 }
 
 /* Basic Style */
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 .matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.matrix img {
+.matrix .matrix__img {
     width: 100%;
 }
 .matrix .matrix__info {
@@ -38,16 +39,12 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.tasks__task {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
-}
+
 .tasks__new {
     display: flex;
 }
 
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -56,12 +53,12 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="tasks__new-task"] {
+.tasks__unit-name,
+.tasks__new-task-label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -70,7 +67,10 @@ label[for="tasks__new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.tasks__task {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -82,16 +82,16 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.tasks__task:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="tasks__new-task"] {
+.tasks__new-task-label {
     display: block;
     margin: 0 0 20px;
 }
-input#tasks__new-task {
+#tasks__new-task {
     width: 318px;
 }
 
